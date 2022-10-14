@@ -78,9 +78,9 @@ def draw_vector_field(X,Y,Z,U,V,W, stride=25):
     w = W[::stride,::stride,::stride]
     
     # Create a quiver plot.
-    fig = plt.figure(dpi=200)
+    fig = plt.figure(dpi = 200)
     ax = fig.add_subplot(projection='3d')
-    ax.quiver3D(x,y,z,u,v,w, pivot='middle', length=0.7, normalize=True, linewidth=0.5, color='red', alpha=0.5)
+    ax.quiver3D(x,y,z,u,v,w, pivot='middle', length=2, normalize=True, linewidth=0.5, color='red', alpha=0.5)
     
     return ax
 
